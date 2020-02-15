@@ -19,7 +19,7 @@ let urlDB;
     if(process.env.NODE_ENV === 'dev'){
     urlDB = 'mongodb://localhost:27017/cafe'
 }else{
-    urlDB = 'mongodb+srv://AMDV:I1af7v2y8kdrr5UK@cluster0-ymodc.mongodb.net/cafe'
+    urlDB = process.env.NODE_ENV.MONGO_URI
 }
 
 //URLDB es un tipo de environment que nosotros creamos y le asignamos la conexión a la DB.
