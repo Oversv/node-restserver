@@ -19,7 +19,7 @@ let urlDB;
     if(process.env.NODE_ENV === 'dev'){
     urlDB = 'mongodb://localhost:27017/cafe'
 }else{
-    urlDB = process.env.MONGO_URI
+    urlDB = process.env.MONGO_URI //Variable de entorno creada por nosotros en Heroku
 }
 
 //URLDB es un tipo de environment que nosotros creamos y le asignamos la conexión a la DB.
