@@ -11,8 +11,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-//Añadir el archivo que tienes los endpoints
-app.use(require('./controller/usuario'))
+//Configuración global de rutas
+app.use(require('./controller/index'))
 
 //Coneción mongoDB --Antigua
 mongoose.connect(process.env.URLDB, 
