@@ -34,3 +34,8 @@ let urlDB;
 
 //URLDB es un tipo de environment que nosotros creamos y le asignamos la conexión a la DB.
 process.env.URLDB = urlDB;
+
+//==============
+// Google client ID
+//==============
+process.env.CLIENT_ID = process.env.CLIENT_ID || '823085514008-hv7tf1sjfk71suas7jq8qftfg0ccnut7.apps.googleusercontent.com'
